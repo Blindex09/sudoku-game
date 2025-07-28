@@ -1,0 +1,119 @@
+INSTALAÇÃO E CONFIGURAÇÃO
+Jogo de Sudoku em Java
+
+REQUISITOS MÍNIMOS
+
+• Java Development Kit (JDK) 8 ou superior
+• Terminal/Prompt de comando
+• Pelo menos 32MB de RAM livres
+• Sistema operacional: Windows 7+, macOS 10.12+, ou Linux
+
+INSTALAÇÃO DO JAVA
+
+Windows:
+1. Baixe o JDK em: https://www.oracle.com/java/technologies/downloads/
+2. Execute o instalador
+3. Adicione o Java ao PATH do sistema
+4. Verifique a instalação: java -version
+
+macOS:
+1. Instale via Homebrew: brew install openjdk@11
+2. Ou baixe do site oficial da Oracle
+3. Verifique: java -version
+
+Linux (Ubuntu/Debian):
+1. sudo apt update
+2. sudo apt install openjdk-11-jdk
+3. Verifique: java -version
+
+Linux (CentOS/RHEL):
+1. sudo yum install java-11-openjdk-devel
+2. Verifique: java -version
+
+INSTALAÇÃO DO JOGO
+
+1. Baixe ou clone o projeto
+2. Extraia para um diretório de sua escolha
+3. Abra terminal/prompt na pasta do projeto
+
+COMPILAÇÃO E EXECUÇÃO
+
+Windows:
+1. Execute: compile.bat
+2. Para jogar: run.bat
+3. Opções: run.bat debug, run.bat no-colors
+
+Linux/macOS:
+1. Dê permissão: chmod +x *.sh
+2. Execute: ./compile.sh
+3. Para jogar: ./run.sh
+4. Opções: ./run.sh debug, ./run.sh no-colors
+
+Alternativamente (todos os sistemas):
+1. make compile
+2. make run
+3. make debug
+4. make no-colors
+
+COMPILAÇÃO MANUAL
+
+Se preferir compilar manualmente:
+
+1. Criar diretório build:
+   mkdir build
+
+2. Compilar classes:
+   javac -d build -cp src src/com/sudoku/*.java src/com/sudoku/model/*.java src/com/sudoku/service/*.java src/com/sudoku/view/*.java src/com/sudoku/util/*.java
+
+3. Executar:
+   cd build
+   java com.sudoku.Main
+
+OPÇÕES DE LINHA DE COMANDO
+
+--debug, -d        Ativa modo debug
+--no-colors, -nc   Desabilita cores
+--help, -h         Exibe ajuda
+--version, -v      Exibe versão
+
+Exemplos:
+java com.sudoku.Main --debug
+java com.sudoku.Main --no-colors
+
+RESOLUÇÃO DE PROBLEMAS
+
+Problema: "java não é reconhecido"
+Solução: Verifique se o Java está instalado e no PATH
+
+Problema: Erro de compilação
+Solução: Verifique se todos os arquivos .java estão presentes
+
+Problema: Cores não aparecem
+Solução: Use --no-colors ou configure terminal para ANSI
+
+Problema: Caracteres especiais
+Solução: Configure terminal para UTF-8
+
+Problema: Erro de memória
+Solução: Execute com mais memória: java -Xmx128m com.sudoku.Main
+
+VERIFICAÇÃO DA INSTALAÇÃO
+
+Para verificar se tudo está funcionando:
+
+1. java -version (deve mostrar Java 8 ou superior)
+2. javac -version (deve mostrar o compilador)
+3. Compile o projeto
+4. Execute java com.sudoku.Main --version
+
+Se todos os passos funcionarem, a instalação está correta.
+
+SUPORTE
+
+Se ainda tiver problemas:
+1. Verifique se o Java está corretamente instalado
+2. Certifique-se de estar no diretório correto
+3. Verifique permissões de arquivo
+4. Consulte a documentação do seu sistema operacional
+
+Para obter ajuda adicional, consulte o README.txt ou a documentação inline no código fonte.
