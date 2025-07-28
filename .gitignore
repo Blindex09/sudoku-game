@@ -1,0 +1,110 @@
+# Jogo de Sudoku - .gitignore
+# Arquivo para controle de versão Git
+
+# Arquivos compilados Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Diretório de build
+build/
+target/
+out/
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Arquivos de backup
+*.bak
+*.tmp
+*~
+*.swp
+*.swo
+
+# Arquivos de log
+*.log
+logs/
+
+# Configurações locais
+local.properties
+config.local
+
+# Arquivos específicos do usuário
+save/
+saves/
+user.data
+statistics.dat
+
+# Arquivos de teste temporários
+test-output/
+test-results/
+
+# Dependency directories
+lib/
+libs/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Eclipse
+bin/
+.metadata
+.recommenders
+
+# NetBeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Arquivos específicos do Windows
+desktop.ini
+
+# Arquivos específicos do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Arquivos específicos do Linux
+*~
+.directory
+
+# Arquivos de configuração do terminal
+.bash_history
+.zsh_history
+
+# Manter apenas arquivos essenciais do projeto
+!src/
+!*.txt
+!*.bat
+!*.sh
+!README*
+!INSTALL*
+!CHANGELOG*
+!EXAMPLES*
